@@ -9,6 +9,8 @@ Half-Life One Hit, based on the GTA V mod
 ## Build
 - Clone with `git clone --recursive https://github.com/drunderscore/HLOH`
   - Or if you already cloned it, be sure to `git submodule init` and `git submodule update`
+- Clone https://github.com/alliedmodders/hl2sdk
+  - You may need to patch `public/tier0/memalloc.h` line 385 to `#include <typeinfo>`
 - `mkdir build`
 - `cd build`
 - `cmake ../`
